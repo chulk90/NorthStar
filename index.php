@@ -10,7 +10,7 @@
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
 }
-exec ("makecall.php")
+include("makecall.php")
 ?>
 
 <!-- @end snippet -->
