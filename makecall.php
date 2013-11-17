@@ -21,7 +21,7 @@ $message = "This is an E-911 request. There was an accident in Duke University (
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
 
-$client = new Services_Twilio($AccountSid, $AuthToken);
+//$client = new Services_Twilio($AccountSid, $AuthToken);
 
 /*
 if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
