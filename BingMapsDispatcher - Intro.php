@@ -18,7 +18,7 @@ if(isset($_REQUEST['msg'])) {
 <!-- @start snippet -->
 
 <h3>Type in the call's reference number:</h3>
-<form action="BingMapsDispatcher.html" method="post">
+<form action="BingMapsDispatcher.php" method="post">
 	<span>Reference Number: <input type="text" name="called" /></span>
     <input type="submit" value="Connect me!" />
 </form>
