@@ -2,6 +2,7 @@
 <htmL>
 <head>
 	<title>Bing Maps for Dispatcher</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
 <h1>Where exactly is the caller?</h1>

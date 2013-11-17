@@ -2,6 +2,7 @@
 <htmL>
 <head>
 	<title>NorthStar: Your Guardian from Above</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
 <h1>E-911 testing (voice and SMS)</h1>

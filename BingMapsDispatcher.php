@@ -3,6 +3,7 @@
 <html>
    <head>
       <title>Location of the Caller</title>
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
       <h2>Where exactly is the caller?</br></h2>
       </br>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
