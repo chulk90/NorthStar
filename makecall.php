@@ -23,11 +23,13 @@ $client = new Services_Twilio($AccountSid, $AuthToken);
 
 $client_sms = new Services_Twilio($AccountSid, $AuthToken);
 
+/*
 if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
     $err = urlencode("Must specify your phone number");
     header("Location: index.php?msg=$err");
     die;
 }
+*/
 
 /* make Twilio REST request to initiate outgoing call */
 $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called']);
