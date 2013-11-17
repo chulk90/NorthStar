@@ -16,7 +16,7 @@ $to= '4434747584';
 $url = 'http://chulk90.azurewebsites.net/';
 
 /* SMS: Message */
-$message = "This is an E-911 service request. There was an accident in Duke University (36.003458,-78.939671) two minutes ago. Please dispatch an ambulance.";
+$message = "This is an Enhanced-911 service request. There was an accident in Duke University (36.003458,-78.939671) one minute and 36 seconds ago. Please dispatch an ambulance.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
@@ -31,7 +31,8 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called']);
 
 // Send the SMS message.
-		$client->account->sms_messages->create($from_number, $to_number, $message);
+$sms = $client->account->sms_messages->create($from, $to, $message, array());
+echo $sms->sid;
 
 /* redirect back to the main page with CallSid */
 $msg = urlencode("Connecting... ".$call->sid);
