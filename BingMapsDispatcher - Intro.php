@@ -4,7 +4,7 @@
 	<title>Bing Maps for Dispatcher</title>
 </head>
 <body>
-<h1>Where exactly is the patient?</h1>
+<h1>Where exactly is the caller?</h1>
 <?php 
 
 /*
