@@ -13,6 +13,7 @@ if(isset($_REQUEST['msg'])) {
 //include("makecall.php")
 ?>
 
+<!-- @start snippet -->
 <h3>Click on 'Go!' when you're ready.</h3>
 <form action="makecall.php" method="post">
     <input type="submit" value="Connect me!" />
