@@ -33,7 +33,7 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called']);
 
 // Send the SMS message.
-$sms = $client_sms->account->sms_messages->create($from, $to, "test", array());
+$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
 echo $sms->sid;
 
 /* redirect back to the main page with CallSid */
