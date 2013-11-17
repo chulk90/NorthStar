@@ -1,11 +1,11 @@
 <cfinclude template="TwilioSettings.cfm" />
 <!--- Outgoing Caller ID you have previously validated with Twilio --->
-<cfset number="NNNNNNNNNN">
+<cfset number="3106272485">
 <!--- Outgoing Number you wish to call --->
-<cfset outgoing = "MMMMMMMMMM">
+<cfset outgoing = "4434747584">
 
 <!--- Directory location for callback.php file (for use in REST URL) --->
-<cfset callback_url = "http://www.example.com/clicktocall/">
+<cfset callback_url = "http://chulk90.azurewebsites.net/">
 
 <!--- Instantiate a new Twilio Rest Client --->
 <cfset twilio = createObject("component", "TwilioLib").init(AccountSid, AuthToken, ApiVersion, ApiEndpoint) />
