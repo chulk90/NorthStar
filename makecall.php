@@ -16,7 +16,7 @@ $to= '4434747584';
 $url = 'http://chulk90.azurewebsites.net/';
 
 /* SMS: Message */
-$message = "This is an E-911 request. There was an accident in Duke University (36.003458,-78.939671) one minute and 36 seconds ago. Please dispatch an ambulance immediately.";
+$message = "This is an E-911 request. There was an accident in Duke University (36.003458,-78.939671) 38 seconds ago. Please dispatch an ambulance immediately.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);

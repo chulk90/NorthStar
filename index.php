@@ -15,7 +15,7 @@ if(isset($_REQUEST['msg'])) {
 
 <!-- @start snippet -->
 
-<h3>Please enter your phone number, and you will be connected to MMMMMMMMMM</h3>
+<h3>Please enter your phone number, and you will be connected to Chul's phone</h3>
 <form action="makecall.php" method="post">
     <span>Your Number: <input type="text" name="called" /></span>
     <input type="submit" value="Connect me!" />
