@@ -59,6 +59,17 @@
              alert("The location of the pushpin is now " + pinLoc.latitude + ", " + pinLoc.longitude);
            }
         }
+
+        function displayInfobox(e)
+         {
+            pinInfobox.setOptions({ visible:true });
+         }
+
+        function hideInfobox(e)
+         {
+            pinInfobox.setOptions({ visible: false });
+         }
+
       </script>
    </head>
    <body onload="GetMap();">
