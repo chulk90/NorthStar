@@ -19,6 +19,7 @@
                             mapTypeId: Microsoft.Maps.MapTypeId.road,
                             zoom: 17});
 
+/*
         // Retrieve the location of the map center 
         var center = map.getCenter();
             
@@ -37,6 +38,17 @@
         // Add the pushpin and info box to the map
         map.entities.push(pin);
         map.entities.push(pinInfobox);
+*/
+        // Retrieve the location of the map center 
+            var center = map.getCenter();
+            
+            // Add a pin to the center of the map
+            var pin = new Microsoft.Maps.Pushpin(center, {draggable: true}); 
+
+            // Add a handler to the pushpin drag
+            Microsoft.Maps.Events.addHandler(pin, 'mouseup', DisplayLoc);
+
+            map.entities.push(pin);
       }
       </script>
    </head>
