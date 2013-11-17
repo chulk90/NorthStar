@@ -4,7 +4,7 @@ require_once('Services/Twilio/Capability.php');
 
 $ACCOUNT_SID = 'AC554454875ef2761dfd97bf9f4d438baa';
 $AUTH_TOKEN = 'c2af4f4d0f28090ead35c5b0b4fc8a16';
-$APP_SID = 'APa94711e9699f2d1b02ae8d289836deec';
+$APP_SID = 'APxxxxxxxxxxxxxxx';
 $token = new Services_Twilio_Capability($ACCOUNT_SID, $AUTH_TOKEN);
 $token->allowClientOutgoing($APP_SID);
 // @end snippet
