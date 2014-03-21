@@ -10,13 +10,13 @@ $AuthToken = "c2af4f4d0f28090ead35c5b0b4fc8a16";
 $from= '3106272485';
 
 /* Number you wish to call */
-$to= '4434747584';
+$to= '3108143567';
 
 /* Directory location for callback.php file (for use in REST URL)*/
-$url = 'http://chulk90.azurewebsites.net/';
+$url = 'http://http://northstartechnologies.azurewebsites.net//';
 
 /* SMS: Message */
-$message = "This is an E-911 request for an accident at Duke University (36.003458,-78.939671) 38 seconds ago. Reference #: 12";
+$message = "Hi Sunmizzle! Test test!";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
