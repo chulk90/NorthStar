@@ -81,7 +81,7 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 */
 
 /* make Twilio REST request to initiate outgoing call */
-$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&date=' . $_REQUEST['date']);
+$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called']);
 
 // Send the SMS message.
 $sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
@@ -89,7 +89,7 @@ echo $sms->sid;
 
 ?>
 
-<h3> v6 </h3>
+<h3> v7 </h3>
 
 <!-- @start snippet -->
 
