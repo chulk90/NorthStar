@@ -27,6 +27,8 @@ $app->post('/data', function() use ($app)) {
 	$time = $app->request->post('time');
 }
 
+$app->run();
+
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
 }
