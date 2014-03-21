@@ -27,7 +27,7 @@ if(isset($_REQUEST['msg'])) {
 ?>
 
 <!-- @start snippet -->
-<h3>Sunmizzle ver. 4</h3>
+<h3>Sunmizzle ver. 5</h3>
 <form action="makecall.php" method="post">
     <input type="submit" value="Connect me!" />
 </form>
