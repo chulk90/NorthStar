@@ -34,7 +34,7 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 }
 */
 
-date_default_timezone_set('America/Phoenix')
+date_default_timezone_set('America/Phoenix');
 $date = date('m/d/Y h:i:s a', time());
 
 /* make Twilio REST request to initiate outgoing call */
