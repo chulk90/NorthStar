@@ -10,7 +10,7 @@
 
 require "twilio-php/Services/Twilio.php";
 
-/*
+
 
 // Slim RESTful API micro-framework
 require 'Slim/Slim.php';
@@ -19,11 +19,14 @@ require 'Slim/Slim.php';
 // Initialize Slim
 $app = new \Slim\Slim();
 
+$location = '';
+$time = '';
+
 $app->post('/data', function() use ($app)) {
 	$location = $app->request->post('location');
 	$time = $app->request->post('time');
 }
-*/
+
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
 }
