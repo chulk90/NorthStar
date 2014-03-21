@@ -1,0 +1,256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cons",
+				"consumer_secret"
+			],
+			[
+				"binarySear",
+				"binarySearchHelper"
+			],
+			[
+				"reverse",
+				"reverseHelper"
+			],
+			[
+				"rever",
+				"reverseHelper"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "callback.php",
+			"settings":
+			{
+				"buffer_size": 471,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Chul/Documents/GitHub/NorthStar/browser-text-to-speech/browser-text-to-speech.php",
+		"/C/Users/Chul/Documents/Networking/CGI U/2014/Website/html5up-big-picture/index.html",
+		"/C/Users/Chul/Desktop/Portal Login.htm",
+		"/C/Users/Chul/Documents/Hack/Loom/loom-launch-hack/config/database.yml",
+		"/C/Users/Chul/Documents/Hack/Loom/loom-launch-hack/Gemfile.lock",
+		"/C/Users/Chul/Documents/Hack/Loom/loom-launch-hack/Gemfile",
+		"/C/Users/Chul/Documents/GitHub/sesh1/package.json",
+		"/C/Users/Chul/Documents/GitHub/sesh1/sesh1.js",
+		"/C/Users/Chul/Documents/GitHub/globalengage/center/index.html",
+		"/C/Users/Chul/Documents/Hack/JS/_Practice/index.html",
+		"/C/Users/Chul/Documents/Hack/Web deployment/tickfinity/tickfinity/node_modules/passport-facebook/package.json",
+		"/C/Users/Chul/Documents/Hack/Web deployment/tickfinity/tickfinity/app.js",
+		"/C/Users/Chul/Documents/Hack/Web deployment/tickfinity/tickfinity/node_modules/passport-facebook/README.md",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Array and String - Integer_String Conversions [My Way].java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - Kevin Bacon_ActorGraphNode.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - Balancing.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Recursion - Combinations of a String.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Recursion - Permutations of a String.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Recursion - Binary Search (No Recursion).java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Array and String - Reverse Words.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - Lowest Common Ancestor.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - Binary Tree to Heap.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - find.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - Preorder Traversal.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - findHeight.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - Preorder Traversal (No Recursion).java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Trees - TreeNode.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Linked Lists - Null or Cycle",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Doubly Linked Lists - List Unflattening.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Singly Linked Lists - Tail Pointer.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Recursion - Binary Search (No Recursion)",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Array and String - Integer_String Conversions [My Way]",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Singly Linked Lists - insertAfter.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Singly Linked Lists - Delete.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Singly Linked Lists - Traversal.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Singly Linked Lists - Insert in Front.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Singly Linked Lists.java",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Recursion - Binary Search",
+		"/C/Users/Chul/Documents/Hack/Interview Questions/Finding Prime Number"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"",
+			"pinterest"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"strategy",
+			"v3",
+			"Users",
+			"users",
+			"pins",
+			"Pins",
+			"pin",
+			";\n",
+			"head"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "callback.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 471,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "NorthStar_Duke.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\Chul\\Documents\\GitHub\\Socratic-Test\\Socratic-Test.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 238.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

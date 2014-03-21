@@ -1,11 +1,11 @@
 <?php ?>
 <htmL>
 <head>
-	<title>NorthStar: Your Guardian from Above</title>
+	<title>NorthStar</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 </head>
 <body>
-<h1>E-911 testing (voice and SMS)</h1>
+<h1>Hello World!</h1>
 <?php 
 
 if(isset($_REQUEST['msg'])) {
@@ -15,7 +15,7 @@ if(isset($_REQUEST['msg'])) {
 ?>
 
 <!-- @start snippet -->
-<h3>Click on 'Connect me!' when you're ready.</h3>
+<h3>Click here!</h3>
 <form action="makecall.php" method="post">
     <input type="submit" value="Connect me!" />
 </form>
