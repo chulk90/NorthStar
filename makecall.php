@@ -13,7 +13,7 @@ $from= '3106272485';
 $to= '3018143567';
 
 /* Directory location for callback.php file (for use in REST URL)*/
-$url = 'http://northstartechnologies.azurewebsites.net//';
+$url = 'http://northstartechnologies.azurewebsites.net/';
 
 /* SMS: Message */
 $message = "Hi Sunmizzle! Test test! - makecall.php";
