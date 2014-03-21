@@ -62,7 +62,9 @@ $called= '4434747584';
 $url = 'http://northstartechnologies.azurewebsites.net/';
 
 date_default_timezone_set('America/Phoenix');
-$date = date('m/d/Y h:i:s a', time());
+$date = date('G i A', time());
+// $date = date('m/d/Y h:i:s a', time());
+echo $date;
 
 /* SMS: Message */
 $message = "Test. " . $date;
