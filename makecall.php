@@ -18,8 +18,11 @@ $called= '4434747584';
 /* Directory location for callback.php file (for use in REST URL)*/
 $url = 'http://northstartechnologies.azurewebsites.net/';
 
+date_default_timezone_set('America/Phoenix');
+$date = date('m/d/Y h:i:s a', time());
+
 /* SMS: Message */
-$message = "Hi Sunmizzle! Test test! - makecall.php";
+$message = "Test. " . $date;
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
@@ -33,9 +36,6 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
     die;
 }
 */
-
-date_default_timezone_set('America/Phoenix');
-$date = date('m/d/Y h:i:s a', time());
 
 /* make Twilio REST request to initiate outgoing call */
 $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&date=' . $_REQUEST['date']);
