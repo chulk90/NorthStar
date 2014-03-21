@@ -62,12 +62,12 @@ $called= '4434747584';
 $url = 'http://northstartechnologies.azurewebsites.net/';
 
 date_default_timezone_set('America/Phoenix');
-$date = date('G i A');
+$date = date('G:i:s A');
 // $date = date('m/d/Y h:i:s a', time());
 echo $date;
 
 /* SMS: Message */
-$message = "Test. " . $date;
+$message = "E911 - Collision detected in " . $location . " at " . $date . ". Victim in stable condition. No fire.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
