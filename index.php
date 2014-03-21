@@ -10,7 +10,7 @@
 
 require "twilio-php/Services/Twilio.php";
 
-
+/*
 
 // Slim RESTful API micro-framework
 require 'Slim/Slim.php';
@@ -28,6 +28,13 @@ $app->post('/data', function() use ($app)) {
 }
 
 $app->run();
+*/
+
+$location = $_GET['location'];
+$accelerometer = $_GET['accelerometer'];
+
+echo $_GET['location'];
+echo $_GET['accelerometer'];
 
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
