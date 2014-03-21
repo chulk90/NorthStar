@@ -62,7 +62,7 @@ $called= '4434747584';
 $url = 'http://northstartechnologies.azurewebsites.net/';
 
 date_default_timezone_set('America/Phoenix');
-$date = date('G i A', time());
+$date = date('G i A');
 // $date = date('m/d/Y h:i:s a', time());
 echo $date;
 
