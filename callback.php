@@ -3,6 +3,6 @@
     echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 ?>
 <Response>
-    <Say>Yo Sun Mee Zle! This is Char, your boo!</Say>
+    <Say>This is a test. One, two, three, four, five. <?php echo $_REQUEST['date']?></Say>
     <Dial><?php echo $_REQUEST['number']?></Dial>
 </Response>

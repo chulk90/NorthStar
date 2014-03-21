@@ -10,10 +10,10 @@ $AuthToken = "c2af4f4d0f28090ead35c5b0b4fc8a16";
 $from= '3106272485';
 
 /* Number you wish to call */
-$to= '3018143567';
+$to= '4434747584';
 
 /* Chul - Number you wish to call */
-$called= '3018143567';
+$called= '4434747584';
 
 /* Directory location for callback.php file (for use in REST URL)*/
 $url = 'http://northstartechnologies.azurewebsites.net/';
@@ -34,8 +34,11 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 }
 */
 
+date_default_timezone_set('America/Phoenix')
+$date = date('m/d/Y h:i:s a', time());
+
 /* make Twilio REST request to initiate outgoing call */
-$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called']);
+$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&time=' . $_REQUEST['date']);
 
 // Send the SMS message.
 $sms = $client_sms->account->sms_messages->create($from, $to, $message, array());

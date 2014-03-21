@@ -7,7 +7,19 @@
 <body>
 <h1>Hello World!</h1>
 <?php 
+/*
+// Slim RESTful API micro-framework
+require 'Slim/Slim.php';
+\Slim\Slim::registerAutoloader();
 
+// Initialize Slim
+$app = new \Slim\Slim();
+
+$app->post('/data', function() use ($app)) {
+	$location = $app->request->post('location');
+	$time = $app->request->post('time');
+}
+*/
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
 }
