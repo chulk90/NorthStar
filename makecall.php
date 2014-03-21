@@ -38,7 +38,7 @@ date_default_timezone_set('America/Phoenix')
 $date = date('m/d/Y h:i:s a', time());
 
 /* make Twilio REST request to initiate outgoing call */
-$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&time=' . $_REQUEST['date']);
+$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&date=' . $_REQUEST['date']);
 
 // Send the SMS message.
 $sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
