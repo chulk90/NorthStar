@@ -1,6 +1,8 @@
 <?php
 require "twilio-php/Services/Twilio.php";
 
+/* IRRELEVANT FILE */
+
 /* Set our AccountSid and AuthToken */
 $AccountSid = "AC554454875ef2761dfd97bf9f4d438baa";
 $AuthToken = "c2af4f4d0f28090ead35c5b0b4fc8a16";

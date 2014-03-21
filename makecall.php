@@ -12,6 +12,9 @@ $from= '3106272485';
 /* Number you wish to call */
 $to= '3018143567';
 
+/* Chul - Number you wish to call */
+$called= '3018143567';
+
 /* Directory location for callback.php file (for use in REST URL)*/
 $url = 'http://northstartechnologies.azurewebsites.net/';
 
