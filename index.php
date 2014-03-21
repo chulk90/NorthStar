@@ -8,6 +8,9 @@
 <h1>Hello World!</h1>
 <?php 
 
+echo $_GET['location'];
+echo $_GET['accelerometer'];
+
 require "twilio-php/Services/Twilio.php";
 
 /*
@@ -33,8 +36,6 @@ $app->run();
 $location = $_GET['location'];
 $accelerometer = $_GET['accelerometer'];
 
-echo $_GET['location'];
-echo $_GET['accelerometer'];
 
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
