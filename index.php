@@ -67,7 +67,7 @@ $date = date('G:i:s A');
 echo $date;
 
 /* SMS: Message */
-$message = "E911 - Collision detected in " . $location . " at " . $date . ". Victim in stable condition. No fire.";
+$message = "E911 - Collision detected in " . $latitude . ", " . $longitude . " at " . $date . ". Victim in stable condition. No fire.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);

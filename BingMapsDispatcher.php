@@ -16,7 +16,7 @@
 
           var map = new Microsoft.Maps.Map(document.getElementById("mapDiv"), 
                              {credentials: "AhXzZBKRsnTVM7M-LOFjoATuQPXll5Ufx25UIZNS2RgHNPmyBg1bh5KMzKxm3EmC",
-                              center: new Microsoft.Maps.Location(36.003458, -78.939671),
+                              center: new Microsoft.Maps.Location(33.415556,-111.931324),
                               mapTypeId: Microsoft.Maps.MapTypeId.road,
                               zoom: 17});
 
