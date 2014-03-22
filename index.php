@@ -8,8 +8,9 @@
 <h1>Hello World!</h1>
 <?php 
 
-echo $_GET['location'];
-echo $_GET['accelerometer'];
+echo 'latitude: ' . $_GET['latitude'] . '
+longitude: ' . $_GET['longitude'] . '
+ ';
 
 require "twilio-php/Services/Twilio.php";
 
@@ -33,8 +34,8 @@ $app->post('/data', function() use ($app)) {
 $app->run();
 */
 
-$location = $_GET['location'];
-$accelerometer = $_GET['accelerometer'];
+$latitude = $_GET['latitude'];
+$longitude = $_GET['longitude'];
 
 
 if(isset($_REQUEST['msg'])) {
@@ -83,7 +84,7 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 */
 
 /* make Twilio REST request to initiate outgoing call */
-$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&location=' . $_REQUEST['location'] . '&time=' . $_REQUEST['date']);
+$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&latitude=' . $_REQUEST['latitude'] . '&longitude=' . $_REQUEST['longitude']);
 
 // Send the SMS message.
 $sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
