@@ -8,9 +8,8 @@
 <h1>Hello World!</h1>
 <?php 
 
-echo 'latitude: ' . $_GET['latitude'] . '
-longitude: ' . $_GET['longitude'] . '
- ';
+echo $_GET['latitude'];
+echo $_GET['longitude'];
 
 require "twilio-php/Services/Twilio.php";
 
