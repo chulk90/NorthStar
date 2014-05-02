@@ -28,43 +28,31 @@
 	"buffers":
 	[
 		{
-			"contents": "<?php ?>\n<htmL>\n<head>\n	<title>NorthStar</title>\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/bootstrap.css\" />\n</head>\n<body>\n<h1>Hello World!</h1>\n<?php \n\necho $_GET['location'];\necho $_GET['accelerometer'];\n\nrequire \"twilio-php/Services/Twilio.php\";\n\n/*\n\n// Slim RESTful API micro-framework\nrequire 'Slim/Slim.php';\n\\Slim\\Slim::registerAutoloader();\n\n// Initialize Slim\n$app = new \\Slim\\Slim();\n\n$location = '';\n$time = '';\n\n$app->post('/data', function() use ($app)) {\n	$location = $app->request->post('location');\n	$time = $app->request->post('time');\n}\n\n$app->run();\n*/\n\n$location = $_GET['location'];\n$accelerometer = $_GET['accelerometer'];\n\n/* NON-ESSENTIAL\nif(isset($_REQUEST['msg'])) {\n	echo '<i>' . $_REQUEST['msg'] . '</i>';\n}\n*/\n\n//include(\"makecall.php\")\n\n//makecall.php\n\n/* Set our AccountSid and AuthToken */\n$AccountSid = \"AC554454875ef2761dfd97bf9f4d438baa\";\n$AuthToken = \"c2af4f4d0f28090ead35c5b0b4fc8a16\";\n\n/* Your Twilio Number or an Outgoing Caller ID you have previously validated\n	with Twilio */\n$from= '3106272485';\n\n/* Number you wish to call */\n$to= '4434747584';\n\n/* Chul - Number you wish to call */\n$called= '4434747584';\n\n/* Directory location for callback.php file (for use in REST URL)*/\n$url = 'http://northstartechnologies.azurewebsites.net/';\n\ndate_default_timezone_set('America/Phoenix');\n$date = date('m/d/Y h:i:s a', time());\n\n/* SMS: Message */\n$message = \"Test. \" . $date;\n\n/* Instantiate a new Twilio Rest Client */\n$client = new Services_Twilio($AccountSid, $AuthToken);\n\n$client_sms = new Services_Twilio($AccountSid, $AuthToken);\n\n/*\nif (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {\n    $err = urlencode(\"Must specify your phone number\");\n    header(\"Location: index.php?msg=$err\");\n    die;\n}\n*/\n\n/* make Twilio REST request to initiate outgoing call */\n$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&date=' . $_REQUEST['date']);\n\n// Send the SMS message.\n$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());\necho $sms->sid;\n\n?>\n\n<h3> v6 </h3>\n\n<!-- @start snippet -->\n\n<!--\n<h3>Sunmizzle ver. 5</h3>\n<form action=\"makecall.php\" method=\"post\">\n    <input type=\"submit\" value=\"Connect me!\" />\n</form>\n-->\n\n<!-- @end snippet -->\n\n</body>\n</html>\n\n",
 			"file": "index.php",
-			"file_size": 2309,
-			"file_write_time": 130398717028905185,
 			"settings":
 			{
-				"buffer_size": 2309,
-				"line_ending": "Unix"
+				"buffer_size": 2467,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<?php\n    header(\"content-type: text/xml\");\n    echo \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\\n\";\n?>\n<Response>\n    <Say>This is a test. One, two, three, four, five. <?php echo $_REQUEST['date']?></Say>\n    <Dial><?php echo $_REQUEST['number']?></Dial>\n</Response>",
 			"file": "callback.php",
-			"file_size": 267,
-			"file_write_time": 130398717730286983,
 			"settings":
 			{
-				"buffer_size": 267,
-				"line_ending": "Unix"
+				"buffer_size": 364,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<?php\nrequire \"twilio-php/Services/Twilio.php\";\n\n/* Set our AccountSid and AuthToken */\n$AccountSid = \"AC554454875ef2761dfd97bf9f4d438baa\";\n$AuthToken = \"c2af4f4d0f28090ead35c5b0b4fc8a16\";\n\n/* Your Twilio Number or an Outgoing Caller ID you have previously validated\n	with Twilio */\n$from= '3106272485';\n\n/* Number you wish to call */\n$to= '4434747584';\n\n/* Chul - Number you wish to call */\n$called= '4434747584';\n\n/* Directory location for callback.php file (for use in REST URL)*/\n$url = 'http://northstartechnologies.azurewebsites.net/';\n\ndate_default_timezone_set('America/Phoenix');\n$date = date('m/d/Y h:i:s a', time());\n\n/* SMS: Message */\n$message = \"Test. \" . $date;\n\n/* Instantiate a new Twilio Rest Client */\n$client = new Services_Twilio($AccountSid, $AuthToken);\n\n$client_sms = new Services_Twilio($AccountSid, $AuthToken);\n\n/*\nif (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {\n    $err = urlencode(\"Must specify your phone number\");\n    header(\"Location: index.php?msg=$err\");\n    die;\n}\n*/\n\n/* make Twilio REST request to initiate outgoing call */\n$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&date=' . $_REQUEST['date']);\n\n// Send the SMS message.\n$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());\necho $sms->sid;\n\n/* redirect back to the main page with CallSid */\n$msg = urlencode(\"Connecting... \".$call->sid);\nheader(\"Location: index.php?msg=$msg\");\n?>\n",
 			"file": "makecall.php",
-			"file_size": 1487,
-			"file_write_time": 130398617414044022,
 			"settings":
 			{
-				"buffer_size": 1487,
-				"line_ending": "Unix"
+				"buffer_size": 1488,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<?php\nrequire \"twilio-php/Services/Twilio.php\";\n\n/* IRRELEVANT FILE */\n\n/* Set our AccountSid and AuthToken */\n$AccountSid = \"AC554454875ef2761dfd97bf9f4d438baa\";\n$AuthToken = \"c2af4f4d0f28090ead35c5b0b4fc8a16\";\n\n/* Your Twilio Number or an Outgoing Caller ID you have previously validated\n	with Twilio */\n$from= '3106272485';\n\n/* Number you wish to call */\n$to= '4434747584';\n\n/* Directory location for callback.php file (for use in REST URL)*/\n$url = 'http://northstartechnologies.azurewebsites.net/';\n\n/* Message */\n$message = \"Hi Sunmizzle! Test test! - sendText.php\";\n\n// Create the call client.\n$client = new Services_Twilio($AccountSid, $AuthToken);\n\n// Send the SMS message.\ntry\n{\n    $client->account->sms_messages->create($from_number, $to_number, $message);\n}\ncatch (Exception $e) \n{\n    echo 'Error: ' . $e->getMessage();\n}\n?>",
 			"file": "sendText.php",
-			"file_size": 872,
-			"file_write_time": 130398591850220341,
 			"settings":
 			{
 				"buffer_size": 838,
@@ -72,10 +60,7 @@
 			}
 		},
 		{
-			"contents": "<?php ?>\n<htmL>\n<head>\n	<title>NorthStar: Your Guardian from Above</title>\n	<link rel=\"stylesheet\" type=\"text/css\" href=\"css/bootstrap.css\" />\n</head>\n<body>\n\n<?php \n\n//if(isset($_REQUEST['msg'])) {\n//	echo '<i>' . $_REQUEST['msg'] . '</i>';\n//}\ninclude(\"makecall.php\")\n?>\n\n</body>\n</html>\n\n",
 			"file": "autocall.php",
-			"file_size": 310,
-			"file_write_time": 130398569256130819,
 			"settings":
 			{
 				"buffer_size": 291,
@@ -210,15 +195,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2309,
+						"buffer_size": 2467,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1965,
-								1965
+								254,
+								254
 							]
 						],
 						"settings":
@@ -226,7 +211,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 861.0,
+						"translation.y": 8.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -237,22 +222,22 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 267,
+						"buffer_size": 364,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								267,
-								267
+								296,
+								124
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
-						"translation.x": 0.0,
+						"translation.x": 28.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
@@ -264,15 +249,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1487,
+						"buffer_size": 1488,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								776,
-								776
+								589,
+								589
 							]
 						],
 						"settings":
@@ -280,7 +265,7 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 205.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -394,7 +379,7 @@
 		[
 			[
 				"",
-				"C:\\Users\\Chul\\Documents\\GitHub\\Socratic-Test\\Socratic-Test.sublime-project"
+				"C:\\Users\\Chul\\Documents\\GitHub\\HealthHack\\HealthHackDC.sublime-project"
 			]
 		],
 		"width": 380.0

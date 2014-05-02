@@ -53,21 +53,21 @@ $AuthToken = "c2af4f4d0f28090ead35c5b0b4fc8a16";
 $from= '3106272485';
 
 /* Number you wish to call */
-$to= '4434747584';
+$to= '3018143567';
 
 /* Chul - Number you wish to call */
-$called= '4434747584';
+$called= '3018143567';
 
 /* Directory location for callback.php file (for use in REST URL)*/
 $url = 'http://northstartechnologies.azurewebsites.net/';
 
-date_default_timezone_set('America/Phoenix');
+date_default_timezone_set('America/New_York');
 $date = date('G:i:s A');
 // $date = date('m/d/Y h:i:s a', time());
 echo $date;
 
 /* SMS: Message */
-$message = "E911 - Collision detected at " . "33.415556, -111.931324 at " . $date . ". Victim is in stable condition. No fire detected.";
+$message = "E911 - Collision detected at " . "38.99 , -76.936194 at " . $date . ". No fire detected. Please send an ambulance.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
