@@ -10,6 +10,7 @@
 
 echo $_GET['latitude'];
 echo $_GET['longitude'];
+echo $_GET['temp'];
 
 require "twilio-php/Services/Twilio.php";
 
@@ -35,6 +36,7 @@ $app->run();
 
 $latitude = $_GET['latitude'];
 $longitude = $_GET['longitude'];
+$temperature = $_GET['temp'];
 
 
 if(isset($_REQUEST['msg'])) {
@@ -53,10 +55,10 @@ $AuthToken = "c2af4f4d0f28090ead35c5b0b4fc8a16";
 $from= '3106272485';
 
 /* Number you wish to call */
-$to= '3018143567';
+$to= '4434747584';
 
 /* Chul - Number you wish to call */
-$called= '3018143567';
+$called= '4434747584';
 
 /* Directory location for callback.php file (for use in REST URL)*/
 //$url = 'http://northstartechnologies.azurewebsites.net/';
@@ -68,7 +70,8 @@ $date = date('G:i:s A');
 echo $date;
 
 /* SMS: Message */
-$message = "E911 - Collision detected at " . "38.99 , -76.936194 at " . $date . ". No fire detected. Please send an ambulance.";
+//$message = "E911 - Collision detected at " . "38.99 , -76.936194 at " . $date . ". No fire detected. Please send an ambulance.";
+$message = "Collision at " . $latitude . $longitude . " at " . $date . ". No fire detected. Please send an ambulance.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
@@ -84,7 +87,7 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 */
 
 /* make Twilio REST request to initiate outgoing call */
-$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&latitude=' . $_REQUEST['latitude'] . '&longitude=' . $_REQUEST['longitude']);
+// $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&latitude=' . $_REQUEST['latitude'] . '&longitude=' . $_REQUEST['longitude']);
 
 // Send the SMS message.
 $sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
