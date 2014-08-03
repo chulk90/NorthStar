@@ -35,7 +35,9 @@ $app->run();
 */
 
 $latitude = $_GET['latitude'];
+$latitude = round($latitude, 6);
 $longitude = $_GET['longitude'];
+$longitude = round($longitude, 6);
 $temperature = $_GET['temp'];
 
 
@@ -71,7 +73,7 @@ echo $date;
 
 /* SMS: Message */
 //$message = "E911 - Collision detected at " . "38.99 , -76.936194 at " . $date . ". No fire detected. Please send an ambulance.";
-$message = "Collision at " . $latitude . $longitude . " at " . $date . ". No fire detected. Please send an ambulance.";
+$message = "Emergency: Traffic collision at " . $latitude . ", " . $longitude . " at " . $date . ". No fire detected. Please send an ambulance.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);
@@ -87,11 +89,11 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 */
 
 /* make Twilio REST request to initiate outgoing call */
-// $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&latitude=' . $_REQUEST['latitude'] . '&longitude=' . $_REQUEST['longitude']);
+$call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&latitude=' . $_REQUEST['latitude'] . '&longitude=' . $_REQUEST['longitude']);
 
 // Send the SMS message.
-$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
-echo $sms->sid;
+//$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
+//echo $sms->sid;
 
 ?>
 
