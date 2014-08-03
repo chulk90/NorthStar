@@ -92,8 +92,8 @@ if (!isset($_REQUEST['called']) || strlen($_REQUEST['called']) == 0) {
 $call = $client->account->calls->create($from, $to, $url . 'callback.php?number=' . $_REQUEST['called'] . '&latitude=' . $_REQUEST['latitude'] . '&longitude=' . $_REQUEST['longitude']);
 
 // Send the SMS message.
-//$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
-//echo $sms->sid;
+$sms = $client_sms->account->sms_messages->create($from, $to, $message, array());
+echo $sms->sid;
 
 ?>
 
