@@ -42,7 +42,7 @@ if(isset($_REQUEST['msg'])) {
 }
 //include("makecall.php")
 
-//makecall.php
+// The following below is copied from "makecall.php"
 
 /* Set our AccountSid and AuthToken */
 $AccountSid = "AC554454875ef2761dfd97bf9f4d438baa";
@@ -59,9 +59,10 @@ $to= '3018143567';
 $called= '3018143567';
 
 /* Directory location for callback.php file (for use in REST URL)*/
-$url = 'http://northstartechnologies.azurewebsites.net/';
+//$url = 'http://northstartechnologies.azurewebsites.net/';
+$url = 'http://nstar.io/';
 
-date_default_timezone_set('America/New_York');
+date_default_timezone_set('America/Los_Angeles');
 $date = date('G:i:s A');
 // $date = date('m/d/Y h:i:s a', time());
 echo $date;

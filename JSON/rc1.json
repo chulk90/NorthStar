@@ -1,0 +1,58 @@
+{
+  "ns-json": {
+    "users": [
+      {
+        "phone": 4434747584,
+        "name": "David",
+        "contacts": [
+          8183084802,
+          2034938473,
+          3014839284
+        ],
+        "data": [
+          {
+            "time": 20140802121400,
+            "coordinates": {
+              "lat": 37.3872855,
+              "lon": -122.06703959999999
+            },
+            "pressure": 1,
+            "temperature": 74,
+            "inertia": "good"
+          }
+        ],
+        "object": {
+          "a": "b",
+          "c": "d",
+          "e": "f"
+        }
+      },
+      {
+        "phone": 3018148567,
+        "name": "Sunmee",
+        "contacts": [
+          8183937393,
+          2018482729,
+          7947372947
+        ],
+        "data": [
+          {
+            "time": 20140802121400,
+            "coordinates": {
+              "lat": 37.3872855,
+              "lon": -122.06703959999999
+            },
+            "pressure": 1,
+            "temperature": 74,
+            "inertia": "good"
+          }
+        ],
+        "object": {
+          "a": "b",
+          "c": "d",
+          "e": "f"
+        }
+      }
+    ]
+  }
+}
