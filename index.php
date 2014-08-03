@@ -40,6 +40,11 @@ $longitude = $_GET['longitude'];
 $longitude = round($longitude, 6);
 $temperature = $_GET['temp'];
 
+$isFire = 0;
+if(floatval($temperature) > 257) {
+	$isFire = 1;
+}
+
 
 if(isset($_REQUEST['msg'])) {
 	echo '<i>' . $_REQUEST['msg'] . '</i>';
@@ -73,7 +78,7 @@ echo $date;
 
 /* SMS: Message */
 //$message = "E911 - Collision detected at " . "38.99 , -76.936194 at " . $date . ". No fire detected. Please send an ambulance.";
-$message = "Emergency: Traffic collision at " . $latitude . ", " . $longitude . " at " . $date . ". No fire detected. Please send an ambulance.";
+$message = "Emergency: Traffic collision at " . $latitude . ", " . $longitude . " at " . $date . ". No fire detected. Please send an ambulance. Case ID is 12.";
 
 /* Instantiate a new Twilio Rest Client */
 $client = new Services_Twilio($AccountSid, $AuthToken);

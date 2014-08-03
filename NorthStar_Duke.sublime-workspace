@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"number",
+				"number_format"
+			],
+			[
 				"date_default",
 				"date_default_timezone_set"
 			],
@@ -31,15 +35,24 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 2505,
+				"buffer_size": 2889,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "a.php",
+			"settings":
+			{
+				"buffer_size": 543,
+				"line_ending": "Windows",
+				"name": "<?php"
 			}
 		},
 		{
 			"file": "callback.php",
 			"settings":
 			{
-				"buffer_size": 364,
+				"buffer_size": 1085,
 				"line_ending": "Windows"
 			}
 		},
@@ -186,7 +199,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -195,15 +208,72 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2505,
+						"buffer_size": 2889,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								185,
-								185
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 40.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "a.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								540,
+								7
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<?php",
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "callback.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1085,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								868,
+								868
 							]
 						],
 						"settings":
@@ -218,35 +288,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "callback.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								160,
-								160
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "makecall.php",
 					"semi_transient": false,
 					"settings":
@@ -274,7 +316,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "sendText.php",
 					"semi_transient": false,
 					"settings":
@@ -298,11 +340,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "autocall.php",
 					"semi_transient": false,
 					"settings":
@@ -326,7 +368,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -408,7 +450,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 238.0,
+	"side_bar_width": 156.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

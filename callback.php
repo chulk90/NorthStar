@@ -23,6 +23,6 @@
 	// print_r($address);
 ?>
 <Response>
-    <Say>There was a traffic collision at 335 Pioneer Way about one minute ago. No fire has been detected. Please send an ambulance to the location.</Say>
+    <Say>There was a traffic collision at 335 Pioneer Way one minute ago. No fire has been detected. Please send an ambulance. Case ID is 12.</Say>
     <Dial><?php echo $_REQUEST['number']?></Dial>
 </Response>
