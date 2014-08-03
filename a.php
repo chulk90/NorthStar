@@ -1,6 +1,6 @@
 <?php 
-	$lat="54.1456123";
-	$long = "10.413456";
+	$lat="37.386170";
+	$long = "-122.067018";
 
 	$url = "http://maps.googleapis.com/maps/api/geocode/json?latlng=$lat,$long&sensor=false";
 
